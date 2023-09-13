@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="328"/>
+    <region id="FeatDescriptions">
+        <node id="root">
+            <children>
+                <node id="FeatDescription">
+                    <attribute id="Description" type="TranslatedString" handle="6b738316-4c1d-4df3-b0af-7d6daefe9440" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="d6045698-9921-44e7-a283-90f7715d4a27" version="1"/>
+                    <attribute id="ExactMatch" type="FixedString" value="KnifeMaster"/>
+                    <attribute id="FeatId" type="guid" value="08385eb2-c899-4d7b-bf8c-7fc77d70799e"/>
+                    <attribute id="UUID" type="guid" value="06a33c0f-0238-4f57-a5a7-5547279d6154"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

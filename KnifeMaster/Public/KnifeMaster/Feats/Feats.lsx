@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="322"/>
+    <region id="Feats">
+        <node id="root">
+            <children>
+				<node id="Feat">
+					<attribute id="Name" type="FixedString" value="KnifeMaster"/>
+					<attribute id="PassivesAdded" type="LSWString" value="KnifeMaster_Keen;KnifeMaster_TripleCrit"/>
+					<attribute id="UUID" type="guid" value="08385eb2-c899-4d7b-bf8c-7fc77d70799e"
+				</node>
+            </children>
+        </node>
+    </region>
+</save>

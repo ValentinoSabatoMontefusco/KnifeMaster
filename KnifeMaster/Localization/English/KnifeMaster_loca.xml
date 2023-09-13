@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+
+	<!-- TALENTO KNIFE MASTER -->
+	<content contentuid="d6045698-9921-44e7-a283-90f7715d4a27" version="1">Knife Master</content>
+	<content contentuid="6b738316-4c1d-4df3-b0af-7d6daefe9440" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking with Daggers is reduced by 1. This effect can stack.&lt;br&gt;&lt;br&gt;Your crit damage with Daggers is allegedly tripled (kek).</content>
+	
+	<content contentuid="b0ce7dac-106f-448e-b3ea-c03f59f37b0c" version="1">Knife Master: Keen Daggers</content>
+	<content contentuid="20dfed32-a2de-4ee6-a988-29d0222e40a8" version="1">The &lt;LSTag Tooltip="CriticalHit"&gt;critical&lt;/LSTag&gt; threshold for your dagger attacks is reduced by 1, stackable.</content>
+	
+	<content contentuid="ae831d66-a1e8-46e3-8d1f-4b96fe6ea1ec" version="1">Knife Master: Deadly Criticals</content>
+	<content contentuid="cade701d-238d-40d5-bd53-e3289f811451" version="1">The &lt;LSTag Tooltip="CriticalHit"&gt;critical&lt;/LSTag&gt; damage you deal with daggers is hopefully tripled.</content>
+	
+</contentList>
