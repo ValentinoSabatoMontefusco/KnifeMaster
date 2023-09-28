@@ -1,0 +1,55 @@
+/************************************************************
+********************** DEADLY ATTACK ************************
+*************************************************************/
+
+new entry "Interrupt_DeadlyAttack"
+type "InterruptData"
+using "Interrupt_SneakAttack"
+data "DisplayName" "8a09783d-372e-4580-9a55-53df52000871;1"
+data "Description" "73c50cda-5c9d-44bd-967e-7ea687da01fe;1"
+data "Icon" "PassiveFeature_Generic_Death"
+data "InterruptDefaultValue" "Ask;Enabled"
+data "Conditions" "Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandAttack() and IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon(context.Observer,true))) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack() and IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon(context.Observer,false))) or IsThrowAttackRoll()) and not IsCritical() and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack') or SpellId('Target_DeadlyAttack')) and not AnyEntityIsItem() and IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon()) and IsMeleeAttack()"
+data "Properties" "IF(IsMeleeAttack()):DealDamage(LevelMapValue(DeadlyAttack), MainMeleeWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(2d4, Force);ApplyStatus(OBSERVER_OBSERVER,DEADLYATTACK_EXPOSED,100,1)"
+
+new entry "Interrupt_DeadlyAttack_Critical"
+type "InterruptData"
+using "Interrupt_DeadlyAttack"
+data "DisplayName" "d998b3ff-852c-4627-8846-0087b2a08548"
+data "Conditions" "Self(context.Source,context.Observer) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandAttack() and IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon(context.Observer,true))) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack() and IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon(context.Observer,false))) or IsThrowAttackRoll()) and HasDamageEffectFlag(DamageFlags.Hit) and IsCritical() and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack') or SpellId('Target_DeadlyAttack')) and not AnyEntityIsItem() and IsMeleeAttack()"
+
+new entry "Target_DeadlyAttack"
+type "SpellData"
+using "Target_SneakAttack"
+data "RequirementConditions" "WieldingFinesseWeaponInSpecificHand(context.Source,false) and HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source) and IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon())"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon + LevelMapValue(DeadlyAttack), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,DEADLYATTACK_EXPOSED,100,1)"
+data "Icon" "PassiveFeature_Generic_Death"
+data "DisplayName" "8a09783d-372e-4580-9a55-53df52000871;1"
+data "Description" "73c50cda-5c9d-44bd-967e-7ea687da01fe;1"
+data "TooltipDamageList" "DealDamage(MainMeleeWeapon + LevelMapValue(DeadlyAttack), MainMeleeWeaponDamageType)"
+
+new entry "Interrupt_SneakAttack"
+type "InterruptData"
+using "Interrupt_SneakAttack"
+data "Conditions" "Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll()) and not IsCritical() and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack') or SpellId('Target_DeadlyAttack')) and not AnyEntityIsItem()"
+
+new entry "Interrupt_SneakAttack_Critical"
+type "InterruptData"
+using "Interrupt_SneakAttack_Critical"
+data "Conditions" "Self(context.Source,context.Observer) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll()) and HasDamageEffectFlag(DamageFlags.Hit) and IsCritical() and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack') or SpellId('Target_DeadlyAttack')) and not AnyEntityIsItem()"
+
+
+
+new entry "DEADLYATTACK_EXPOSED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "eb86771d-cd15-4d07-93ca-368d37b08979;1"
+data "Description" "abe09d75-9821-447c-8d06-26fce2e0f61f;1"
+data "Icon" "PassiveFeature_Generic_Death"
+data "StackId" "DEADLYATTACK"
+data "TickType" "StartTurn"
+data "Boosts" "AC(-5)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusEffect" "60ba63d8-a7f5-41d9-96a0-032bebafa377"
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="312"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+				<node id="ActionResourceDefinition">
+					<attribute id="Description" type="TranslatedString" handle="cfbef184-5a01-43d6-a83c-1cc0c3c4b84c" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="33e521a3-9048-4d95-b913-c1f933b4979c" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="LethalityPoint"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="7313be7a-5eec-400e-8bc2-512e3e2eb3d5"/>					
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
 
-	<!-- TALENTO KNIFE MASTER -->
+	<!-- KNIFE MASTER FEAT -->
+	
 	<content contentuid="d6045698-9921-44e7-a283-90f7715d4a27" version="1">Knife Master</content>
-	<content contentuid="6b738316-4c1d-4df3-b0af-7d6daefe9440" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking with Daggers is reduced by 1. This effect can stack.&lt;br&gt;&lt;br&gt;Your crit damage with Daggers is allegedly tripled (kek).</content>
+	<content contentuid="6b738316-4c1d-4df3-b0af-7d6daefe9440" version="1">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking with Daggers is reduced by 1. This effect can stack.&lt;br&gt;&lt;br&gt;When dealing critical damage with a Dagger you apply &lt;LSTag Tooltip="Bleeding"&gt;Bleeding&lt;/LSTag&gt;.</content>
 	
 	<content contentuid="b0ce7dac-106f-448e-b3ea-c03f59f37b0c" version="1">Knife Master: Keen Daggers</content>
-	<content contentuid="20dfed32-a2de-4ee6-a988-29d0222e40a8" version="1">The &lt;LSTag Tooltip="CriticalHit"&gt;critical&lt;/LSTag&gt; threshold for your dagger attacks is reduced by 1, stackable.</content>
+	<content contentuid="20dfed32-a2de-4ee6-a988-29d0222e40a8" version="1">The &lt;LSTag Tooltip="CriticalHit"&gt;Critical&lt;/LSTag&gt; threshold for your dagger attacks is reduced by 1. This effect can stack.</content>
 	
 	<content contentuid="ae831d66-a1e8-46e3-8d1f-4b96fe6ea1ec" version="1">Knife Master: Deadly Criticals</content>
-	<content contentuid="cade701d-238d-40d5-bd53-e3289f811451" version="1">The &lt;LSTag Tooltip="CriticalHit"&gt;critical&lt;/LSTag&gt; damage you deal with daggers is hopefully tripled.</content>
+	<content contentuid="cade701d-238d-40d5-bd53-e3289f811451" version="1">Your &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; apply &lt;LSTag Tooltip="Bleeding"&gt;Bleeding&lt;/LSTag&gt;.</content>
 	
+	<!-- CUTTHROAT SUBCLASS -->
+	
+	<content contentuid="33776449-0a2f-4bad-b44a-fbe2e9db57cc" version="1">Cutthroat</content>
+	<content contentuid="733705ee-e743-4661-bcdf-a9a1d9ecc90a" version="1">Cutthroats bring sneak attacks to the extreme: be it from treacharous stabs from shadows or cruel cuts to enemies made harmless by poisons, their main aim is maximize damage and disappear before any chance of retaliation.</content>
+	
+	<content contentuid="740a344f-4997-4dc4-82be-cf01822ede46" version="1">Cutthroat: Ambush</content>
+	<content contentuid="3ee94cef-4bfe-4c42-acbf-dc164da89a7a" version="1">Any successful &lt;LSTag Tooltip="AttackRoll"&gt;attack roll&lt;/LSTag&gt; made while Hiding within 3 m against an out of combat creature is a guaranteed &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt;</content>
+	
+	<content contentuid="d185d3c5-794e-4f75-ac34-81fb4075ad85" version="1">Poison Expert</content>
+	<content contentuid="90c7e77f-ca28-4619-8905-399216a05a18" version="1">The DC of your coatings when attacking is increased by your Proficiency Bonus. Moreover, damage from your coatings applies on-hit and successful &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; don't make your enemies immune to further applications of your coating debuffs.</content>
+	
+	
+	<content contentuid="18efcbb6-0c7f-432c-b89e-f7e319a1e464" version="1">Adrenaline Rush</content>
+	<content contentuid="f4128bd4-c24a-421a-a531-68befc8b8eb1" version="1">When a weapon attack lands a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; or kills a creature, you get an additional Bonus Action and 4.5 m of movement that turn.&lt;br&gt;Wearing Heavy or Medium Armor disables this effect.</content>
+	
+	<content contentuid="ca8a0899-2ceb-4e43-b3b4-0e9c90d86abf" version="1">Improved Adrenaline Rush</content>
+	<content contentuid="85c61c31-e3dd-455b-9a57-f41517972c3c" version="1">When a weapon attack lands a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hits&lt;/LSTag&gt; or kills a creature, you get an additional Bonus Action and 6 m of movement that turn. Moreover, ending your turn in &lt;LSTag Tooltip="SNEAKING"&gt;Hiding&lt;/LSTag&gt; grants you &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisibility&lt;/LSTag&gt; until your next turn.&lt;br&gt;Wearing Heavy or Medium Armor disables this effect.</content>
+	
+	<content contentuid="8a09783d-372e-4580-9a55-53df52000871" version="1">Deadly Attack</content>
+	<content contentuid="73c50cda-5c9d-44bd-967e-7ea687da01fe" version="1">When landing a &lt;LSTag Type="Spell" Tooltip="Target_SneakAttack"&gt;Sneak Attack&lt;/LSTag&gt; with a Dagger, you can double the Sneak Attack damage dice you roll in exchange for -5 to your &lt;LSTag Tooltip="ArmorClass"&gt;Armour Class&lt;/LSTag&gt; for one turn</content>
+	<content contentuid="d998b3ff-852c-4627-8846-0087b2a08548" version="1">Deadly Attack (Critical Hit)</content>
+	
+	<content contentuid="eb86771d-cd15-4d07-93ca-368d37b08979" version="1">Deadly Attack Exposure</content>
+	<content contentuid="abe09d75-9821-447c-8d06-26fce2e0f61f" version="1">Delivering such a brutal strike left you exposed. You suffer -5 to your &lt;LSTag Tooltip="ArmorClass"&gt;Armour Class&lt;/LSTag&gt;</content>
 </contentList>

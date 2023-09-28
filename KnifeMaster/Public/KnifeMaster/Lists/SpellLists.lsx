@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="329"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+				<node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Rogue Cutthroat 5" />
+					<attribute id="Spells" type="LSString" value="Target_DeadlyAttack" />
+					<attribute id="UUID" type="guid" value="ac05bf8e-dd72-4588-8007-1f0e6b274291"/>
+				</node>
+            </children>
+        </node>
+    </region>
+</save>

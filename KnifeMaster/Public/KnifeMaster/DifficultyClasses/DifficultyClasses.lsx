@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="DifficultyClasses">
+        <node id="root">
+            <children>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="1"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_1"/>
+                    <attribute id="UUID" type="guid" value="9da4e959-4db9-4669-9da1-153cd250d5fc"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="3"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_3"/>
+                    <attribute id="UUID" type="guid" value="d262a38e-2d86-4342-84fc-b28271f23282"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="4"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_4"/>
+                    <attribute id="UUID" type="guid" value="365fe522-c9d4-470d-ab7e-c64e60eaef4d"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="9"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_9"/>
+                    <attribute id="UUID" type="guid" value="34bf414f-9f89-4b51-bdfe-158ef1eb90b1"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="13"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_13"/>
+                    <attribute id="UUID" type="guid" value="9b60e4f9-ad8d-43fa-bf15-7c13a47b2b30"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="17"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_17"/>
+                    <attribute id="UUID" type="guid" value="6bcc9696-22b9-45a7-a1b4-257a0c76526e"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="22"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_22"/>
+                    <attribute id="UUID" type="guid" value="0850ab61-c07d-4958-9a13-b34c9920951e"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="23"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_23"/>
+                    <attribute id="UUID" type="guid" value="adbf5e98-0866-4140-aa0e-46f7b706e5c8"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="26"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_26"/>
+                    <attribute id="UUID" type="guid" value="68e69a5f-1f79-4ead-9352-1c5d7545aa31"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="27"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_27"/>
+                    <attribute id="UUID" type="guid" value="583c03f3-f1ef-498e-bd7a-f8382795d4e9"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="28"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_28"/>
+                    <attribute id="UUID" type="guid" value="d1675e97-fa98-4b1e-85f4-e94e0ff21013"/>
+                </node>
+                <node id="DifficultyClass">
+                    <attribute id="Difficulties" type="LSString" value="29"/>
+                    <attribute id="Name" type="LSString" value="KnifeMaster_29"/>
+                    <attribute id="UUID" type="guid" value="52060dcd-927a-4178-a8e6-213b95b1d929"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

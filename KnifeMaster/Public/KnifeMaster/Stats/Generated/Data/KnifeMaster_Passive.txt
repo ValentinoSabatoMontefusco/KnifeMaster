@@ -4,14 +4,21 @@ data "DisplayName" "b0ce7dac-106f-448e-b3ea-c03f59f37b0c;1"
 data "Description" "20dfed32-a2de-4ee6-a988-29d0222e40a8;1"
 data "Icon" "PassiveFeature_MagicalAmbush"
 data "Properties" "Highlighted"
-data "Conditions" "Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true))"
-data "Boosts" ReduceCriticalThreshold(1)
+data "BoostContext" "OnAttack"
+data "BoostConditions" "IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon())"
+data "Boosts" "ReduceCriticalAttackThreshold(1)"
 
 new entry "KnifeMaster_TripleCrit"
 type "PassiveData"
 data "DisplayName" "ae831d66-a1e8-46e3-8d1f-4b96fe6ea1ec;1"
 data "Description" "cade701d-238d-40d5-bd53-e3289f811451;1"
-data "Icon" "PassiveFeature_BrutalCritical"
+data "Icon" "PassiveFeature_StalkersFlurry"
 data "Properties" "Highlighted"
-data "Conditions" "Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true))"
-data "Boosts" "CriticalHitExtraDice(1, MeleeWeaponAttack)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsWeaponOfProficiencyGroup('Daggers', GetActiveWeapon()) and IsCritical()"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15)):ApplyStatus(BLEEDING,100,2)"
+						
+
+
+
+

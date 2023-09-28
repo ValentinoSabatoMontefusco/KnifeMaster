@@ -1,0 +1,312 @@
+/************************************************************
+**********************	DROW POISON  ************************
+*************************************************************/
+
+
+
+// DROW POISON
+// Targets must succeed a Constitution Saving Throw or become poisoned and fall asleep
+
+
+//DROW POISON
+//Weapon is coated with poison. Targets hit with this weapon might be Poisoned and fall Asleep
+
+new entry "POISON_DROW_DIPPED"
+type "StatusData"
+using "POISON_DROW_DIPPED"
+data "Passives" ""
+
+
+new entry "Poison_Drow_Passive_2"
+type "PassiveData"
+using "Poison_Drow_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15, AdvantageOnPoisoned())):ApplyStatus(POISON_DROW_CONDITION,100,-1)"
+
+new entry "Poison_Drow_Passive_3"
+type "PassiveData"
+using "Poison_Drow_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 16, AdvantageOnPoisoned())):ApplyStatus(POISON_DROW_CONDITION,100,-1)"
+
+new entry "Poison_Drow_Passive_4"
+type "PassiveData"
+using "Poison_Drow_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 17, AdvantageOnPoisoned())):ApplyStatus(POISON_DROW_CONDITION,100,-1)"
+
+// Equipment Status?
+// Coated in Drow Poison
+// Targets must succeed a Constitution Saving Throw or become POISONED and fall Asleep
+
+// RETURN DROW PASSIVE DC TO 13
+
+/************************************************************
+**********************	BASIC POISON  ***********************
+*************************************************************/
+
+new entry "POISON_SIMPLE_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "POISON_SIMPLE_DIPPED"
+data "Passives" ""
+
+new entry "Poison_Simple_Passive_2"
+type "PassiveData"
+using "Poison_Simple_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 13, AdvantageOnPoisoned())):ApplyStatus(POISON_SIMPLE_CONDITION,100,-1)"
+
+new entry "Poison_Simple_Passive_3"
+type "PassiveData"
+using "Poison_Simple_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 14, AdvantageOnPoisoned())):ApplyStatus(POISON_SIMPLE_CONDITION,100,-1)"
+
+new entry "Poison_Simple_Passive_4"
+type "PassiveData"
+using "Poison_Simple_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15, AdvantageOnPoisoned())):ApplyStatus(POISON_SIMPLE_CONDITION,100,-1)"
+
+/************************************************************
+**********************	SIMPLE TOXIN  ***********************
+*************************************************************/
+
+new entry "ALCH_TOXIN_BASIC_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ALCH_TOXIN_BASIC_DIPPED"
+data "Passives" ""
+
+
+new entry "Toxin_Basic_Passive_2"
+type "PassiveData"
+using "Toxin_Basic_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):DamageBonus(1d4,Poison)"
+
+new entry "Toxin_Basic_Passive_3"
+type "PassiveData"
+using "Toxin_Basic_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):DealDamage(1d4,Poison)"
+
+new entry "Toxin_Basic_Passive_4"
+type "PassiveData"
+using "Toxin_Basic_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15)):DealDamage(1d4,Poison)"
+
+/************************************************************
+*************	OIL OF DIMINUTION (REDUCE)  *****************
+*************************************************************/
+
+new entry "ALCH_OIL_REDUCE_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ALCH_OIL_REDUCE_DIPPED"
+data "Passives" ""
+
+
+new entry "ALCH_Oil_Reduce_Passive_2"
+type "PassiveData"
+using "ALCH_Oil_Reduce_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 13)):ApplyStatus(REDUCE,100,2)"
+
+new entry "ALCH_Oil_Reduce_Passive_3"
+type "PassiveData"
+using "ALCH_Oil_Reduce_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 14)):ApplyStatus(REDUCE,100,2)"
+
+new entry "ALCH_Oil_Reduce_Passive_4"
+type "PassiveData"
+using "ALCH_Oil_Reduce_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15)):ApplyStatus(REDUCE,100,2)"
+
+
+/************************************************************
+*******************  SERPENT FANG TOXIN  ********************
+*************************************************************/
+
+new entry "TOXIN_SERPENTVENOM_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "TOXIN_SERPENTVENOM_DIPPED"
+data "Passives" ""
+
+
+new entry "Toxin_SerpentVenom_Passive_2"
+type "PassiveData"
+using "Toxin_SerpentVenom_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15)):DealDamage(1d6,Poison)"
+
+new entry "Toxin_SerpentVenom_Passive_3"
+type "PassiveData"
+using "Toxin_SerpentVenom_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 16)):DealDamage(1d6,Poison)"
+
+new entry "Toxin_SerpentVenom_Passive_4"
+type "PassiveData"
+using "Toxin_SerpentVenom_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 17)):DealDamage(1d6,Poison)"
+
+/************************************************************
+**********************  WYVERN TOXIN  ***********************
+*************************************************************/
+
+
+new entry "TOXIN_WYVERN_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "TOXIN_WYVERN_DIPPED"
+data "Passives" ""
+
+
+new entry "Toxin_Wyvern_Passive_2"
+type "PassiveData"
+using "Toxin_Wyvern_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 17)):DealDamage(1d8,Poison)"
+
+new entry "Toxin_Wyvern_Passive_3"
+type "PassiveData"
+using "Toxin_Wyvern_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 18)):DealDamage(1d8,Poison)"
+
+new entry "Toxin_Wyvern_Passive_4"
+type "PassiveData"
+using "Toxin_Wyvern_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 19)):DealDamage(1d8,Poison)"
+
+/************************************************************
+******************  PURPLE WORM TOXIN  **********************
+*************************************************************/
+
+new entry "TOXIN_PURPLEWORM_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "TOXIN_PURPLEWORM_DIPPED"
+data "Passives" ""
+
+new entry "Toxin_PurpleWorm_Passive_2"
+type "PassiveData"
+using "Toxin_PurpleWorm_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 21)):DealDamage(1d10,Poison)"
+
+new entry "Toxin_PurpleWorm_Passive_3"
+type "PassiveData"
+using "Toxin_PurpleWorm_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 22)):DealDamage(1d10,Poison)"
+
+new entry "Toxin_PurpleWorm_Passive_4"
+type "PassiveData"
+using "Toxin_PurpleWorm_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 23)):DealDamage(1d10,Poison)"
+
+
+/************************************************************
+***********  THISOBALD'S BREWED-UP BELLYGLUMMER  ************
+*************************************************************/
+
+
+new entry "UNI_POISON_BREWER_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "UNI_POISON_BREWER_DIPPED"
+data "Passives" ""
+
+new entry "UNI_Poison_Brewer_Passive_2"
+type "PassiveData"
+using "UNI_Poison_Brewer_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 19)):ApplyStatus(UNI_POISON_BREWER_CONDITION,100,-1)"
+
+new entry "UNI_Poison_Brewer_Passive_3"
+type "PassiveData"
+using "UNI_Poison_Brewer_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 20)):ApplyStatus(UNI_POISON_BREWER_CONDITION,100,-1)"
+
+new entry "UNI_Poison_Brewer_Passive_4"
+type "PassiveData"
+using "UNI_Poison_Brewer_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 21)):ApplyStatus(UNI_POISON_BREWER_CONDITION,100,-1)"
+
+
+/************************************************************
+*********************  CRALWER MUCUS  ***********************
+*************************************************************/
+
+
+new entry "POISON_CRAWLER_MUCUS_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "POISON_CRAWLER_MUCUS_DIPPED"
+data "Passives" ""
+
+
+new entry "Poison_CrawlerMucus_Passive_2"
+type "PassiveData"
+using "Poison_CrawlerMucus_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 15, AdvantageOnPoisoned())):ApplyStatus(POISON_CRAWLER_MUCUS_CONDITION,100,-1)"
+
+new entry "Poison_CrawlerMucus_Passive_3"
+type "PassiveData"
+using "Poison_CrawlerMucus_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 16, AdvantageOnPoisoned())):ApplyStatus(POISON_CRAWLER_MUCUS_CONDITION,100,-1)"
+
+new entry "Poison_CrawlerMucus_Passive_4"
+type "PassiveData"
+using "Poison_CrawlerMucus_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 17, AdvantageOnPoisoned())):ApplyStatus(POISON_CRAWLER_MUCUS_CONDITION,100,-1)"
+
+/************************************************************
+***********************  MALICE  ****************************
+*************************************************************/
+
+
+
+new entry "POISON_MALICE_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "POISON_MALICE_DIPPED"
+data "Passives" ""
+
+new entry "Poison_Malice_Passive_2"
+type "PassiveData"
+using "Poison_Malice_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 17, AdvantageOnPoisoned())):ApplyStatus(POISON_MALICE_CONDITION,100,-1)"
+
+new entry "Poison_Malice_Passive_3"
+type "PassiveData"
+using "Poison_Malice_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 18, AdvantageOnPoisoned())):ApplyStatus(POISON_MALICE_CONDITION,100,-1)"
+
+new entry "Poison_Malice_Passive_4"
+type "PassiveData"
+using "Poison_Malice_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, 19, AdvantageOnPoisoned())):ApplyStatus(POISON_MALICE_CONDITION,100,-1)"
+
+/************************************************************
+*********************  OIL OF BANE  *************************
+*************************************************************/
+
+
+new entry "ALCH_OIL_BANE_DIPPED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ALCH_OIL_BANE_DIPPED"
+data "Passives" ""
+
+new entry "ALCH_Oil_Bane_Passive_2"
+type "PassiveData"
+using "ALCH_Oil_Bane_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Charisma, 13)):ApplyStatus(ALCH_OIL_BANE_CONDITION,100,2)"
+
+new entry "ALCH_Oil_Bane_Passive_3"
+type "PassiveData"
+using "ALCH_Oil_Bane_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Charisma, 14)):ApplyStatus(ALCH_OIL_BANE_CONDITION,100,2)"
+
+new entry "ALCH_Oil_Bane_Passive_4"
+type "PassiveData"
+using "ALCH_Oil_Bane_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Charisma, 15)):ApplyStatus(ALCH_OIL_BANE_CONDITION,100,2)"
+
+
+
+
+
+
+
+
+
